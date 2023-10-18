@@ -6,7 +6,7 @@
 /*   By: aagouzou <aagouzou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 20:37:38 by aagouzou          #+#    #+#             */
-/*   Updated: 2023/10/17 19:17:49 by aagouzou         ###   ########.fr       */
+/*   Updated: 2023/10/18 13:53:53 by aagouzou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,10 @@ class PhoneBook
 {
 	public:
 	Contact Contacts[8];
-	int		_add(add);
+	static int index;
+	void		_add(void);
 	void	_search(void);
 };
 
+int PhoneBook::index = 0;
 #endif
